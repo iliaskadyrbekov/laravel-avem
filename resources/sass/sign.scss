@@ -1,0 +1,109 @@
+/*                   MAIN
+--------------------------------------*/
+.content__title {
+    margin: 60px auto 90px;
+    height: fit-content;
+    .title__top {
+        text-align: center;
+        margin: 0 0 22px;
+        color: #80CED0;
+    }
+    .title__bottom{text-align: center;}
+}
+.content__form {
+    margin: 30px auto;
+    width: 510px;
+    .form__submit {
+        margin: 75px 0 90px;
+        width: 163px;
+        height: 33px;
+        font-family: Montserrat, serif;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        background-color: #1AA7A1;
+        border-radius: 15px;
+        border: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        outline: none;
+        padding: 0;
+        box-shadow: 0 0 8px rgba(128, 206, 208, 0.8);
+        &:hover {
+            box-shadow: 0 0 3px rgba(128, 206, 208, 0.8);
+            cursor: pointer;
+        }
+    }
+}
+
+.form__box {
+    margin: 0 0 15px;
+    .box__labels {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        .alert-danger {
+            margin: 0 25px 2px;
+        }
+    }
+    label {
+        margin: 0 5px 2px 25px;
+        font-family: Montserrat, serif;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    input {
+        height: 36px;
+        width: 100%;
+        border: none;
+        background-color: #F0F0F0;
+        border-radius: 15px;
+        font-family: Open Sans, serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        padding-left: 15px;
+        outline: none;
+        &::placeholder {
+            color: #80CED0;
+        }
+        &:focus {
+            background-color: white;
+            border: 1px solid #1AA7A1;
+            padding-left: 14px;
+        }
+    }
+    input[type=date]{
+        &::-webkit-inner-spin-button { display: none; }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .content__title {
+        .title__bottom{
+            h1 {font-size: 28px;}
+        }
+    }
+    .content__form {
+        width: 510px;
+        .form__submit {
+            margin: 45px 0 60px;
+            width: 163px;
+            height: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content__title {
+        margin: 40px auto 60px;
+    }
+    .content__form {
+        width: 90%;
+    }
+}

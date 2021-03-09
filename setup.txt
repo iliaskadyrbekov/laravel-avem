@@ -1,0 +1,35 @@
+Laravel:
+-project started with:
+    laravel new avem
+-to get lacking files:
+    composer update
+-you should have npm to install compiler, to install compiler run:
+    npm install -g sass
+-then make file watcher for scss, compiled css to Project/public/css:
+    in Arguments field:
+        --update $FileName$:$ProjectFileDir$/public/css/$FileNameWithoutExtension$.css
+-change database files (.env; config/database.php).
+-add authentication libs
+    composer require laravel/ui
+    php artisan ui vue --auth
+-rename columns with migration
+    composer require doctrine/dbal
+-debugbar add with composer
+    composer require barryvdh/laravel-debugbar --dev
+-image compression library
+    composer require intervention/image
+Useful commands:
+    php artisan serve (to start the server)
+    php artisan make:model "ClassName" [-m] (to create the model class with migration)
+    php artisan make:controller "ClassName" (to create the controller class)
+
+
+
+
+
+MySQL:
+-get countries and cities from world_names database:
+    insert into avem.countries (id, country_name)
+    select id, name from world_names.countries;
+    insert into avem.cities (id, country_id, city_name)
+    select id, country_id, name from world_names.cities;

@@ -1,0 +1,250 @@
+/*                  CONTENT
+--------------------------------------*/
+.content {
+    .posts {
+
+        margin: 30px 20px;
+        @media (max-width: 576px) {
+            margin: 30px 15px;
+        }
+    }
+
+    .posts__title {
+        margin-bottom: 20px;
+    }
+
+    .post__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        height: 47px;
+        @media (max-width: 576px) {
+            height: 80px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .post__info {
+        display: flex;
+        .post__person-image {
+            width: 47px;
+            height: 47px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .post__data {
+            margin-left: 16px;
+
+            .post__nickname {
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            .post__data-additional {
+                display: flex;
+                margin-top: 9px;
+                color: #757575;
+                @media (max-width: 576px) {
+                    display: block;
+                }
+            }
+        }
+
+        .post__date {
+            margin-right: 20px;
+            @media (max-width: 768px) {
+                font-size: 15px;
+            }
+            @media (max-width: 576px) {
+                margin: 0;
+            }
+        }
+
+        .post__location-link {
+            display: flex;
+            @media (max-width: 576px) {
+                margin-top: 10px;
+            }
+        }
+
+        .post__location-image {
+            height: 15px;
+            margin-top: 0.7px;
+        }
+
+        .post__location-name {
+            margin-left: 1px;
+            @media (max-width: 768px) {
+                font-size: 15px;
+            }
+        }
+
+    }
+
+    .post__bookmark-image {
+        box-sizing: border-box;
+        margin-left: 20px;
+        filter: drop-shadow(0px 0px 4px rgba(128, 206, 208, 0.6));
+        &:hover {
+            filter: drop-shadow(0px 0px 2px rgba(128, 206, 208, 0.6));
+        }
+    }
+
+    .post__bookmark-image--active {
+        filter: none;
+    }
+
+    .post__image {
+        width: 100%;
+        height: 350px;
+        box-sizing: border-box;
+        object-fit: cover;
+    }
+
+    .post__bottom {
+        margin-top: 15px;
+        .post__hashtags {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 6px;
+            .post__hashtags-item {
+                background: #57C3C1;
+                border-radius: 15px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: #FFFFFF;
+                padding: 2px 24px;
+                margin: 0 14px 14px 0;
+            }
+
+        }
+
+        .post__description {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 22px;
+            font-size: 16px;
+
+            .post__detail {
+                color: #009A95;
+            }
+        }
+
+        .post__feedback {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+
+            .post__like-link, .post__share-link, .post__like-link_disabled {
+                display: flex;
+            }
+
+            .post__like-link, .post__like-link_disabled {
+                align-items: center;
+                cursor: pointer;
+                .post__like-image {
+                    box-sizing: border-box;
+                    filter: drop-shadow(0px 0px 4px rgba(128, 206, 208, 0.6));
+                    &:hover {
+                        filter: drop-shadow(0px 0px 2px rgba(128, 206, 208, 0.6));
+                    }
+                }
+                .post__like-image--active {
+                    filter: none;
+                    margin-top: -1px;
+                }
+            }
+
+            .post__share-text, .post__like-text {
+                margin-left: 11px;
+            }
+
+            .post__comment-text{
+                margin: 0 15px;
+                @media (max-width: 340px) {
+                    margin: 0;
+                }
+            }
+
+            .post__share{
+                @media (max-width: 400px) {
+                    display: none;
+                }
+            }
+
+        }
+        .post__share-none{
+            display: none;
+            @media (max-width: 400px) {
+                display: block;
+
+            }
+            .post__share-link-none{
+                @media (max-width: 400px) {
+                    display: flex;
+                    align-items: center;
+                    width: 72px;
+                    margin: 10px auto 0;
+                }
+                .post__share-text-none{
+                    @media (max-width: 400px) {
+                        margin-left: 7px;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    .post__line {
+        margin: 30px 0;
+        @media (max-width: 768px) {
+            margin: 25px 0;
+        }
+    }
+
+    .posts__btn {
+        background: #1AA7A1;
+        box-shadow: 0 0 8px rgba(128, 206, 208, 0.8);
+        &:hover {
+            box-shadow: 0 0 3px rgba(128, 206, 208, 0.8);
+        }
+        font-family: Montserrat, serif;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 15px;
+        padding: 7px 26px;
+        color: white;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        display: block;
+        width: 163px;
+        margin: 35px auto 0;
+        @media (max-width: 768px) {
+            padding: 10px 26px;
+            margin-top: 40px;
+        }
+    }
+
+    button:active, button:focus {
+        outline: none;
+    }
+
+    button::-moz-focus-inner {
+        border: 0;
+    }
+}
+
+
+

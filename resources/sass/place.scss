@@ -1,0 +1,109 @@
+/*                   MAIN
+--------------------------------------*/
+.place-info{
+    margin: 30px 20px 0;
+}
+
+.info__poster {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    padding: 60px 10px 130px;
+    .poster__city p {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    .poster__place h1 {
+        font-size: 36px;
+        font-weight: 600;
+        margin: 11px auto 11px;
+    }
+    .poster__slogan p {
+        font-size: 18px;
+    }
+}
+
+.info__about {
+    margin: 20px 0 0;
+    text-align: justify;
+    .about__welcome hr{
+        margin: 6px auto;
+        width: 100px;
+        background-color: #1AA7A1;
+    }
+    .about__text {
+        margin: 15px 60px;
+        hr {
+            margin: 10px auto 0;
+            width: 25px;
+        }
+    }
+}
+
+.info__details {
+    margin: 30px 0 0;
+    .details__title {
+        margin: 0 0 20px;
+    }
+    .details__location, .details__phone, .details__site {
+        margin-bottom: 11px;
+    }
+    .details__site a {
+        font-family: "Open Sans", serif;
+        color: #009A95;
+    }
+    .details__hours {
+        table {
+            margin: 3px 0 0 40px;
+            font-family: "Open Sans", serif;
+        }
+        th{
+            font-weight: 600;
+            text-align: right;
+            padding: 2px 10px 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    .info__poster {
+        padding: 20px 10px 75px;
+        .poster__city p {
+            font-size: 13px;
+        }
+        .poster__place h1 {
+            font-size: 30px;
+            margin: 6px auto 4px;
+        }
+        .poster__slogan p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .place-info{
+        margin: 30px 15px 0;
+    }
+    .info__about {
+        .about__text {
+            margin: 15px 40px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+}

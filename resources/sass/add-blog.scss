@@ -1,0 +1,222 @@
+/*                  CONTENT
+--------------------------------------*/
+.add-blog__title-info {
+    display: flex;
+    margin-bottom: 25px;
+    .add-blog__btn-back{
+        height: 20px;
+        outline: 0 none;
+        border: none;
+        cursor: pointer;
+        .add-blog__back-image{
+            background-color: #FFFFFF;
+            padding: 0 5px 5px 0;
+
+        }
+    }
+    
+    .add-blog__title{
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 22px;
+        margin-left: 26px;
+    }
+}
+.add-blog{
+    padding: 15px 20px 15px;
+    @media (max-width: 768px) {
+        padding: 25px 15px 10px;
+    }
+    .add-blog__header{
+        display: flex;
+        margin-bottom: 20px;
+        .add-blog__btn-post {
+            background: #1AA7A1;
+            box-shadow: 0 0 8px rgba(128, 206, 208, 0.8);
+            &:hover {
+                box-shadow: 0 0 3px rgba(128, 206, 208, 0.8);
+            }
+            border-radius: 15px;
+            padding: 7px 20px;
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            margin: 5px 0 10px;
+            @media (max-width: 768px) {
+                padding: 10px 11px;
+            }
+        }
+    }
+
+    .photo__box-labels{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        .photo__title{
+            font-family: Montserrat, serif;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0 5px 2px 25px;
+        }
+
+        .photo__alert{
+            margin: 0 15px 2px 0;
+        }
+    }
+
+
+    .add-blog__carusel {
+        position: relative;
+        margin-bottom: 25px;
+        .add-blog__download-photo {
+            min-height: 277px;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            outline: 3px solid white;
+            border-radius: 15px;
+            border: 0.5px solid #A8A8A8;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .add-blog__take-photo {
+                background: rgba(0, 0, 0, 0.3);
+                position: relative;
+                flex: 0 0 100%;
+                .carusel__photo{
+                    position: absolute;
+                    width: 100%;
+                    height: 276px;
+                    object-fit: cover;
+                }
+
+                input[type="file"] {
+                    display: none;
+                }
+
+                .take-photo__btn-image {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1;
+                    cursor: pointer;
+                }
+            }
+
+            .add-blog__photo-add {
+                border: 4px dashed #A8A8A8;
+                border-radius: 15px;
+                position: relative;
+                flex: 0 0 100%;
+                .photo-add__btn-wrapper {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        .add-blog__carusel-left-button, .add-blog__carusel-right-button{
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+            &:hover {
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+            }
+            border: none;
+            outline: none;
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            z-index: 1;
+        }
+
+        .add-blog__carusel-right-button {
+            right: -15px;
+            background: white url("../images/icon-right-arrow.svg") no-repeat center;
+        }
+
+        .add-blog__carusel-left-button {
+            left: -15px;
+            background: white url("../images/icon-left-arrow.svg") no-repeat center;
+        }
+    }
+
+    .add-blog__additional-info-item {
+        margin: 0 0 15px;
+        .box__labels {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: space-between;
+            .alert-danger {
+                margin: 0 15px 2px 0;
+            }
+        }
+        label {
+            margin: 0 5px 2px 25px;
+            font-family: Montserrat, serif;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        input, textarea {
+            line-height: normal;
+            height: 36px;
+            width: 100%;
+            border: none;
+            background-color: #F0F0F0;
+            border-radius: 15px;
+            font-family: Open Sans, serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            padding-left: 15px;
+            outline: none;
+            &::placeholder {
+                color: #80CED0;
+            }
+            &:focus {
+                background-color: white;
+                border: 1px solid #1AA7A1;
+                padding-left: 14px;
+            }
+        }
+        .input-share{
+            min-height: 65px;
+            padding: 7px 15px;
+            outline: none;
+            resize: none;
+            overflow: hidden;
+            &:focus {
+                padding: 6px 14px;
+            }
+        }
+    }
+    .add-blog__additional-info-item-tags{
+        margin: 0 0 5px;
+    }
+
+    .add-blog__input-tag{
+        width: 240px !important;
+        height: 36px;
+        border: none;
+        background: #F0F0F0;
+        border-radius: 15px;
+        padding: 7px 15px;
+        outline: none;
+        resize: none;
+        overflow: hidden;
+        margin: 0 20px 15px 0;
+        padding: 7px 15px;
+        overflow-x: hidden;
+        font-family: Open Sans;
+    }
+}

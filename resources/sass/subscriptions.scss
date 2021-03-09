@@ -1,0 +1,41 @@
+.subscriptions{
+    display: grid;
+    grid-template-rows: 24px auto;
+    grid-row-gap: 25px;
+    margin: 30px 20px;
+    @media (max-width: 576px) {
+        margin: 30px 15px;
+    }
+    .subscriptions__title {
+        text-align: center;
+    }
+
+    .subscriptions__people {
+        display: grid;
+        grid-row-gap: 10px;
+        .people__person {
+            display: grid;
+            grid-template-columns: 48px 157px;
+            grid-column-gap: 10px;
+            padding: 0 2px;
+            .person__image {
+                height: 48px;
+                img {
+                    width: 48px;
+                    height: 48px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+            .person__info {
+                display: grid;
+                grid-template-rows: auto auto;
+                align-content: space-between;
+                .info__posts h4 {
+                    font-weight: 400;
+                    color: #757575;
+                }
+            }
+        }
+    }
+}

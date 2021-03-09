@@ -1,0 +1,123 @@
+.add-blog__title-info {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.add-blog__btn-back{
+    height: 20px;
+    outline: 0 none;
+    border: none;
+    cursor: pointer;
+}
+.add-blog__title{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    margin-left: 26px;
+}
+.add-blog__back-image{
+    background-color: #FFFFFF;
+    padding: 0 5px 5px 0;
+}
+#poster-img {
+    display: none;
+}
+#poster-avatar {
+    display: none;
+}
+.poster-upload {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    height: 300px;
+    border-radius: 15px;
+    justify-content: center;
+    width: 100%;
+}
+.poster__icon {
+    align-self: center;
+    cursor: pointer;
+}
+.poster-upload__avatar {
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    left: 21px;
+    bottom: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+}
+.profile-edit__label {
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+#inputCounter {
+    margin-right: 25px;
+    color: gray;
+    font-size: 14px;
+}
+.add-blog__header{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.add-blog__btn-post {
+    background: #1AA7A1;
+    box-shadow: 0 0 8px rgba(128, 206, 208, 0.8);
+    &:hover {
+        box-shadow: 0 0 3px rgba(128, 206, 208, 0.8);
+    }
+    border-radius: 15px;
+    padding: 7px 20px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 5px 0 10px;
+    @media (max-width: 768px) {
+        padding: 10px 11px;
+    }
+}
+.input-share{
+    min-height: 65px;
+    padding: 7px 15px;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    &:focus {
+        padding: 6px 14px;
+    }
+    line-height: normal;
+    height: 36px;
+    width: 100%;
+    border: none;
+    background-color: #F0F0F0;
+    border-radius: 15px;
+    font-family: Open Sans, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    padding-left: 15px;
+    outline: none;
+    &::placeholder {
+        color: #80CED0;
+    }
+    &:focus {
+        background-color: white;
+        border: 1px solid #1AA7A1;
+        padding-left: 14px;
+    }
+}

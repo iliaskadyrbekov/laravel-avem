@@ -1,0 +1,133 @@
+/*                   VARIABLES
+--------------------------------------*/
+
+
+
+/*                   GLOBAL TAGS
+--------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f7f7f7;
+    p {
+        line-height: normal;
+    }
+    h1 {
+        font-family: Montserrat, serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        margin: 0;
+    }
+    h2 {
+        font-family: Montserrat, serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    h3 {
+        font-family: Montserrat, serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+    }
+    h4 {
+        font-family: Montserrat, serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    h5 {
+        font-family: Montserrat, serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    hr {
+        height: 1px;
+        border-width: 0;
+        background-color: #DCDCDC;
+    }
+    button:focus {outline:0;}
+
+}
+
+/*                   MAIN
+--------------------------------------*/
+.main-wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 1300px;
+    margin: 90px auto 0;
+    padding: 0px 50px;
+    justify-content: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 50px;
+    justify-content: center;
+}
+
+.content{
+    font-family: Montserrat, serif; // here leave only content part. blogs should be removed
+    p {
+        font-family: "Open Sans", serif;
+    }
+    min-height: 100vh;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px #B0B0B0;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.alert-danger {
+    color: red;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+.footer {
+    h5 {
+        margin: 35px auto 20px;
+        width: fit-content;
+    }
+}
+
+/*                   BREAKPOINTS
+--------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+    .main-wrapper {
+        grid-template-columns: 235px 650px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-wrapper {
+        padding: 0;
+    }
+    .content {
+        margin: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .content {
+        margin: 0 2px;
+    }
+}
+
+

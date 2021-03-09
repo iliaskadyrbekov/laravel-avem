@@ -1,0 +1,64 @@
+/*                   RIGHT MENU
+--------------------------------------*/
+
+.right-menu{
+    display: grid;
+    grid-template-rows: 24px auto;
+    grid-row-gap: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px #B0B0B0;
+    border-radius: 15px;
+    padding: 15px 8px;
+    margin-left: 40px;
+    height: fit-content;
+    .right-menu__title {
+        text-align: center;
+    }
+
+    .right-menu__people {
+        display: grid;
+        grid-template-rows: repeat(6, 48px 1px) 48px;
+        grid-row-gap: 10px;
+        .people__person {
+            display: grid;
+            grid-template-columns: 48px 157px;
+            grid-column-gap: 10px;
+            padding: 0 2px;
+            .person__image {
+                height: 48px;
+                img {
+                    width: 48px;
+                    height: 48px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+            .person__info {
+                display: grid;
+                grid-template-rows: auto auto;
+                align-content: space-between;
+                .info__posts h4 {
+                    font-weight: 400;
+                    color: #757575;
+                }
+            }
+        }
+    }
+}
+
+.no-right-menu {
+    min-width: 235px;
+    margin-left: 40px;
+}
+
+/*                   BREAKPOINTS
+--------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+    .right-menu {
+        display: none;
+    }
+    .no-right-menu {
+        display: none;
+    }
+}
